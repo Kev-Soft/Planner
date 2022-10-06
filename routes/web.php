@@ -13,4 +13,4 @@ use App\Http\Controllers\CalenderController;
 |
 */
 
-Route::get('/', [CalenderController::class, 'index']);
+Route::get('/{month?}/{year?}', [CalenderController::class, 'index']);
