@@ -95,7 +95,12 @@
             </tr>
             <tr>
                 @for($a=35; $a <= 41; $a++)
-                    <td> {{ $data[$a] }} </td>
+                    <td>
+                        {{ $data[$a] }} <br/>
+                        @if(in_array($data[$a], $targets))
+                            X
+                        @endif
+                    </td>
                 @endfor
             </tr>
 
@@ -105,3 +110,5 @@
 
     </body>
 </html>
+
+
