@@ -68,6 +68,20 @@
                 </tr>
             </thead>
             <tbody class="table-group-divider">
+
+            @for($a=1; $a <= 6; $a++)
+                <tr>
+                    @for($b = $a*7-7; $b <= $a*7-1; $b++)
+                            <td> {{ $data[$b] }}  <br/>
+                            @if(in_array($data[$b],$targets))
+                                 x
+                            @endif
+                            </td>
+                    @endfor
+                </tr>
+            @endfor
+
+            <!-- old code - refactored and compressed
             <tr>
                 @for($a=0; $a <= 6; $a++)
                     <td> {{ $data[$a] }} </td>
@@ -103,7 +117,7 @@
                     </td>
                 @endfor
             </tr>
-
+            -->
             </tbody>
         </table>
     </div>

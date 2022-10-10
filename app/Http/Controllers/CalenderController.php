@@ -45,7 +45,9 @@ class CalenderController extends Controller
             $dates = Date::all();
 
             foreach($dates as $date) {
-                $targets[] = date('j.m.y',strtotime($date->target));
+                //$targets[(date('j.m.y',strtotime($date->target)))] =  $date->title;
+                $targets[] =  (date('j.m.y',strtotime($date->target)));
+                $targets[][] = $date->title;
             }
 
                 for($a=0; $a <= 41; $a++) {
