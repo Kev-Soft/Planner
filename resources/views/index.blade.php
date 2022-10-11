@@ -81,43 +81,7 @@
                 </tr>
             @endfor
 
-            <!-- old code - refactored and compressed
-            <tr>
-                @for($a=0; $a <= 6; $a++)
-                    <td> {{ $data[$a] }} </td>
-                @endfor
-            </tr>
-            <tr>
-                @for($a=7; $a <= 13; $a++)
-                    <td> {{ $data[$a] }} </td>
-                @endfor
-            </tr>
-            <tr>
-                @for($a=14; $a <= 20; $a++)
-                    <td> {{ $data[$a] }} </td>
-                @endfor
-            </tr>
-            <tr>
-                @for($a=21; $a <= 27; $a++)
-                    <td> {{ $data[$a] }} </td>
-                @endfor
-            </tr>
-            <tr>
-                @for($a=28; $a <= 34; $a++)
-                    <td> {{ $data[$a] }} </td>
-                @endfor
-            </tr>
-            <tr>
-                @for($a=35; $a <= 41; $a++)
-                    <td>
-                        {{ $data[$a] }} <br/>
-                        @if(in_array($data[$a], $targets))
-                            X
-                        @endif
-                    </td>
-                @endfor
-            </tr>
-            -->
+
             </tbody>
         </table>
     </div>
